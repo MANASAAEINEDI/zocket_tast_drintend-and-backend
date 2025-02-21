@@ -1,0 +1,29 @@
+AI Tools in AI Task Manager
+ Overview
+ The AI-powered Task Management System integrates AI-based features using OpenAI/Gemini API
+ to enhance task automation, prioritization, and real-time decision-making. The AI tools optimize
+ workflows and improve productivity for users.
+ AI Features Implemented
+ 1. AI-Powered Task Suggestions- How it works: When a user creates a new task, the system sends a request to the OpenAI/Gemini
+ API with the task title and description. AI analyzes the task context and suggests improvements or
+ additional subtasks.- Example Use Case:
+  User inputs: 'Develop API for user authentication'
+  AI suggests:
+  - Implement JWT-based authentication
+  - Secure password hashing with bcrypt
+  - Create middleware for protected routes
+ 2. AI-Driven Task Prioritization- How it works: AI analyzes task deadlines, user workload, and importance to automatically prioritize
+ tasks. Uses machine learning models to predict task urgency.- Example Use Case:
+  - High-priority: 'Prepare presentation for investor meeting'
+  - Medium-priority: 'Refactor codebase'
+  - Low-priority: 'Organize documentation'
+ 3. AI-Powered Smart Reminders
+- How it works: AI detects deadlines and schedules reminders via notifications (Slack, Email,
+ Discord). AI adapts reminder frequency based on task urgency and user behavior.- Example Use Case:
+  - 'Submit project report by 5 PM' AI sends reminders at 3 PM and 4:30 PM
+ 4. AI Chatbot for Task Assistance- How it works: AI chatbot integrated into the task management dashboard allows users to ask for
+ suggestions, get task summaries, and automate actions.- Example Use Case:
+  User: 'Summarize pending tasks'
+  AI: 'You have 3 urgent tasks: Complete API development, prepare investor report, and optimize
+ database queries'
+ Deployment and AI Integration- AI models are hosted on cloud services (OpenAI/Gemini API)- WebSockets and Goroutines are used for real-time AI recommendations- Deployed on cloud platforms (Render, Fly.io, Vercel
